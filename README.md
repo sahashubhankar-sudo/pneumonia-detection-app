@@ -14,8 +14,8 @@ Model: EfficientNetB0 (ImageNet) fine-tuned on a balanced 5,400-image sample of 
 | `examples/` | Sample held-out test X-rays |
 
 ## Run in GitHub Codespaces
-1. Code → Codespaces → Create codespace on `main` (the image is built automatically by `postCreateCommand`).
-2. In the terminal: `docker run -p 7860:7860 pneumonia-app`
+1. Code → Codespaces → Create codespace on `main` (the universal image includes Docker).
+2. In the terminal: `docker build -t pneumonia-app . && docker run -p 7860:7860 pneumonia-app`
 3. Open the **Ports** tab → port 7860 → the forwarded URL (`https://<codespace-name>-7860.app.github.dev`).
 4. Upload an X-ray (or click an example) to see the predicted class and probability.
 
