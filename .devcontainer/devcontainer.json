@@ -1,0 +1,8 @@
+{
+  "name": "pneumonia-detection",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": { "ghcr.io/devcontainers/features/docker-in-docker:2": {} },
+  "forwardPorts": [7860],
+  "portsAttributes": { "7860": { "label": "Gradio app", "onAutoForward": "openBrowser" } },
+  "postCreateCommand": "docker build -t pneumonia-app ."
+}

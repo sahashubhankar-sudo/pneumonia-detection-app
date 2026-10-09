@@ -1,0 +1,10 @@
+{
+  "classes": [
+    "Lung Opacity",
+    "No Lung Opacity / Not Normal",
+    "Normal"
+  ],
+  "img_size": 224,
+  "best_model": "M9 EfficientNetB0 fine-tuned + dense",
+  "opacity_threshold": 0.3
+}
